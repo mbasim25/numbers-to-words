@@ -1,0 +1,14 @@
+{
+  "name": "nums_to_words_converter",
+  "version": "1.0.0",
+  "description": "a small cli tool that converts numbers to words",
+  "main": "./src/numbers-to-words.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.6.2"
+  }
+}
