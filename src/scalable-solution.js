@@ -47,7 +47,6 @@ const numberToWords = (number, startMilestoneIndex = 0) => {
 
   for (let i = startMilestoneIndex; i < milestones.length; i++) {
     const milestone = milestones[i];
-    console.log(number, milestone);
     if (number >= milestone.value) {
       const quotient = Math.floor(number / milestone.value);
       number %= milestone.value;
