@@ -39,7 +39,3 @@ This project includes comprehensive tests using the Jest testing framework. To r
    ```sh
    npm test
    ```
-
-## Contact
-
-For any inquiries or support, please contact: moh.basim25@gmail.com

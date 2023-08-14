@@ -75,7 +75,7 @@ const testCases = [
 ];
 
 for (let t of testCases) {
-  test(`Handles loveholidays test case ${t.number}`, () => {
+  test(`Handles test case ${t.number}`, () => {
     process.argv = ["node", "numbers-to-words.js", t.number];
     numberToWords();
     expect(consoleOutput).toEqual([t.word]);
