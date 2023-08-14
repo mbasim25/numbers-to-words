@@ -6,6 +6,7 @@ The **Number to Words CLI Tool** is a command-line utility that converts numeric
 
 - Convert a numeric input to its words representation.
 - Handles integers within the range of 0 to 100000.
+- Scalable solution that can handle numbers up to a quadrillion.
 - Provides accurate conversion using a predefined mapping of numbers to words.
 - Includes comprehensive tests using the Jest testing framework.
 - Minimal dependencies – only uses Jest for testing.
@@ -21,6 +22,12 @@ To use the **Number to Words CLI Tool**, you'll need to have [Node.js](https://n
 
    ```sh
    node ./src/numbers-to-words <number>
+   ```
+
+   or you can run the scalable solution using the following command:
+
+   ```sh
+   node ./src/scalable-solution <number>
    ```
 
 ## Running Tests
@@ -39,3 +46,11 @@ This project includes comprehensive tests using the Jest testing framework. To r
    ```sh
    npm test
    ```
+
+## GitHub Repository
+
+This code is also uploaded to github, visit the [GitHub repository](https://github.com/mbasim25/numbers-to-words).
+
+## Contact
+
+For questions or feedback, please contact me at moh.basim25@gmail.com.

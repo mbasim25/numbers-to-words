@@ -1,5 +1,3 @@
-// Disclaimer: this code is not finished and is just an experimental scalable solution
-
 const numbersMap = {
   0: "zero",
   1: "one",
@@ -32,24 +30,26 @@ const numbersMap = {
 };
 
 const milestones = [
-  { name: "quadrillion", value: 1000000000000 },
-  { name: "trillion", value: 1000000000 },
+  { name: "quadrillion", value: 1000000000000000 },
+  { name: "trillion", value: 1000000000000 },
+  { name: "billion", value: 1000000000 },
   { name: "million", value: 1000000 },
   { name: "thousand", value: 1000 },
   { name: "hundred", value: 100 },
 ];
 
-const numberToWords = (number) => {
+const numberToWords = (number, startMilestoneIndex = 0) => {
   if (numbersMap[number] !== undefined) {
     return numbersMap[number];
   }
 
   let words = "";
 
-  for (const milestone of milestones) {
+  for (let i = startMilestoneIndex; i < milestones.length; i++) {
+    const milestone = milestones[i];
+    console.log(number, milestone);
     if (number >= milestone.value) {
       const quotient = Math.floor(number / milestone.value);
-
       number %= milestone.value;
 
       if (quotient > 0) {
@@ -57,7 +57,7 @@ const numberToWords = (number) => {
           words += ", ";
         }
 
-        words += `${numberToWords(quotient)} ${milestone.name}`;
+        words += `${numberToWords(quotient, i + 1)} ${milestone.name}`;
       }
     }
   }
@@ -105,3 +105,5 @@ const main = () => {
 };
 
 main();
+
+module.exports = { main };
