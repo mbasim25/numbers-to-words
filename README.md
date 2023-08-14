@@ -12,7 +12,7 @@ The **Number to Words CLI Tool** is a command-line utility that converts numeric
 
 ## Installation
 
-To use the **Number to Words CLI Tool**, you'll need to have [Node.js](https://nodejs.org/) installed on your system.
+To use the **Number to Words CLI Tool**, you'll need to have [Node.js](https://nodejs.org/) installed on your system and make sure that that version is 18 or higher.
 
 ## Usage
 
