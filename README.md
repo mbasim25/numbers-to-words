@@ -46,11 +46,3 @@ This project includes comprehensive tests using the Jest testing framework. To r
    ```sh
    npm test
    ```
-
-## GitHub Repository
-
-This code is also uploaded to github, visit the [GitHub repository](https://github.com/mbasim25/numbers-to-words).
-
-## Contact
-
-For questions or feedback, please contact me at moh.basim25@gmail.com.
